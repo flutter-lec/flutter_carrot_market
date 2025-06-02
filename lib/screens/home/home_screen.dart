@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_carrot_market/models/product.dart';
+import 'package:flutter_carrot_market/screens/_components/appbar_preferred_size.dart';
 import 'package:flutter_carrot_market/screens/home/components/list_item.dart';
 import 'package:flutter_carrot_market/screens/home/detail/home_detail_screen.dart';
 
@@ -48,10 +49,7 @@ class HomeScreen extends StatelessWidget {
         IconButton(icon: const Icon(CupertinoIcons.list_dash), onPressed: () {}),
         IconButton(icon: const Icon(CupertinoIcons.bell), onPressed: () {}),
       ],
-      bottom: PreferredSize(
-        preferredSize: Size(double.infinity, .5),
-        child: Divider(thickness: .5, color: Colors.grey),
-      ),
+      bottom: appBarBottomLine(),
     );
   }
 }

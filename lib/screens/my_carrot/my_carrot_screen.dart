@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carrot_market/models/icon_menu.dart';
+import 'package:flutter_carrot_market/screens/_components/appbar_preferred_size.dart';
 import 'package:flutter_carrot_market/screens/my_carrot/components/card_icon_menu.dart';
 import 'package:flutter_carrot_market/screens/my_carrot/components/my_carrot_header.dart';
 
@@ -29,10 +30,7 @@ class MyCarrotScreen extends StatelessWidget {
     return AppBar(
       title: Text("나의 당근"),
       actions: [IconButton(onPressed: () {}, icon: Icon(Icons.settings))],
-      bottom: PreferredSize(
-        preferredSize: Size(double.infinity, .5),
-        child: Divider(thickness: .5, color: Colors.grey),
-      ),
+      bottom: appBarBottomLine(),
     );
   }
 }

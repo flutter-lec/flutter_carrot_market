@@ -12,8 +12,8 @@ class MainScreens extends StatefulWidget {
 }
 
 class _MainScreensState extends State<MainScreens> {
-  int selectedIndex = 3;
-  List<int> loadPages = [3]; // 배열의 크기 1
+  int selectedIndex = 1;
+  List<int> loadPages = [1]; // 배열의 크기 1
 
   void selectedBottomMenu(int index) {
     if (!loadPages.contains(index)) {
