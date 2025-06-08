@@ -13,7 +13,16 @@ class NeighborhoodLifeScreen extends StatelessWidget {
     return Scaffold(
       appBar: _appBar(),
       body: ListView(
-        children: [LifeHeader(), LifeBody()],
+        children: [
+          LifeHeader(),
+          ...List.generate(
+            10,
+            (index) => Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: LifeBody(),
+            ),
+          ),
+        ],
       ),
     );
   }
